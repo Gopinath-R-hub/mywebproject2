@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My creation</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="code.js">
+</head>
+
+<body>
+    <header>
+        <div id="hero">
+            <div class="navbar">
+                <img src="https://i.pinimg.com/originals/30/3a/54/303a54e8cf016b058eb616010cdcc977.gif" class="logo">
+                <div class="user">
+                    <nav>
+                        <ul>
+                            <li><a href="#">TEST</a></li>
+                            <li><a href="#">ODI</a></li>
+                            <li><a href="#">T20</a></li>
+                            <li><a href="#">CRICKET SQUAD</a></li>
+                            <li><a href="#">TOP PLAYERS</a></li>
+                    </nav>
+                    <a class="cta" href="#" type=button onclick="footer()">MORE</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    <marquee><small>Welcome to our cricket website...</small></marquee>
+                    <h3>To know about Indian players history </h3>
+                    <button type="button" onclick="code()">Records</button>
+                    <div id="new">
+                        <p>Favourite Cricketer History career is <br/>
+                            <img src="https://images.thequint.com/thequint%2F2020-08%2F1150e5ab-4a75-4458-85c5-0d8f2cac9f84%2F7.jpg" id="new"></img>
+                        </p>
+                    </div>
+                </p>
+            </div>
+
+        </div>
+    </header>
+    <footer>
+        <p id="ftr"><img src=""></img> TamilNadu,US<br/>
+            <img src=""></img> Phone:+91 6383394568<br/>
+            <img src=""></img> Email:iplcricket21@indianteam.com</br>
+        </p>
+        <p id=""><img src=""></img>
+        </p>
+    </footer>
+    <script>
+        function code() {
+            var x = document.getElementById("new");
+            if (x.style.display !== "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function footer() {
+            var y = document.getElementById("ftr");
+            document.write(y);
+        }
+    </script>
+
+</body>
+
+</html>
